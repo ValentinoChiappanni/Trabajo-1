@@ -1,0 +1,67 @@
+import Frutas.*
+import Colores.*
+
+describe "Manzana"{
+	test "peso" {
+		assert.equals(150, manzana.peso())
+	}
+	test "Es grande" {
+		assert.that(manzana.esGrande())
+	}
+	test "Cambiar peso" {
+		manzana.peso(35)
+		assert.equals(35, manzana.peso())
+	}
+	test "Energia si es grande" {
+		assert.equals(3, manzana.energia())
+	}
+	test "Energia si es chica" {
+		manzana.peso(65)
+		assert.equals(1, manzana.energia())
+	}
+	test "Color de la manzana"{
+		assert.equals(rojo, manzana.color())
+	}
+}
+
+describe "Mandarina"{
+	test "peso" {
+		assert.equals(65, mandarina.peso())
+	}
+	test "No es grande" {
+		assert.notThat(mandarina.esGrande())
+	}
+	test "Cambiar peso" {
+		mandarina.peso(125)
+		assert.equals(125, mandarina.peso())
+	}
+	test "Energia si es grande" {
+		mandarina.peso(125)
+		assert.equals(5, mandarina.energia())
+	}
+	test "Energia si es chica" {
+		assert.equals(2, mandarina.energia())
+	}
+	test "Color de la mandarina"{
+		assert.equals(naranja, mandarina.color())
+	}
+}
+
+describe "Banana"{
+	test "peso" {
+		assert.equals(125, banana.peso())
+	}
+	test "Es grande" {
+		assert.that(banana.esGrande())
+	}
+	test "Cambiar peso" {
+		banana.peso(65)
+		assert.equals(65, banana.peso())
+	}
+	test "Energia" {
+		assert.equals(3, banana.energia())
+	}
+	test "Color de la Banana"{
+		assert.equals(amarillo, banana.color())
+	}
+}

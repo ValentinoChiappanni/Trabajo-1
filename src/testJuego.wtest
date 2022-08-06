@@ -1,0 +1,15 @@
+import Juegos.*
+describe "Juegos"{
+	test "Energia que consume el futbol" {
+		assert.equals(7, futbol.energiaConsumida())
+	}
+	test "Energia que consume natacion" {
+		assert.equals(3, natacion.energiaConsumida())
+	}
+	test "Energia que consume handball" {
+		assert.equals(6, handball.energiaConsumida())
+	}
+	test "Energia que consume el voley" {
+		assert.equals(2, voley.energiaConsumida())
+	}
+}
