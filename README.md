@@ -1,7 +1,4 @@
 # Trabajo Nro°1
-
-Vamos a comenzar a modelar a un grupo de 4, personas las cuales van a saber, responder a mensajes y realizar determinas acciones.
-
 ## Personajes
 
 Vamos a modelar a Martin, Verónica, Juana y Gerardo.
