@@ -63,8 +63,8 @@ Vamos a modelar 3 frutas: Manzana, Mandarina y Banana.
 
 |Fruta| Es chica | Es grande |
 |-----|--------|--------|
-|Manzana| 3 | 1
-|Mandarina| 5|2
+|Manzana| 1 | 3
+|Mandarina| 2|5
 |Banana| 3|3
 
 ## Juegos
