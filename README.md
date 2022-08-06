@@ -5,7 +5,7 @@ Vamos a modelar a Martin, Verónica, Juana y Gerardo.
 - Se espera que cada uno de los personajes pueda recordar su **energía**, además que esta pueda ser preguntada y se le puedan cambiar sus valores en cualquier momento. Es decir debería tener dos métodos `energia()` y `energia(nuevoNivel)`. Cada personaje inicia con:
 
 |Personaje| Energía |
-|-----|--------|
+:-----:|:-----:|
 |Martin| 5
 |Verónica| 4
 |Juana| 1
@@ -13,7 +13,7 @@ Vamos a modelar a Martin, Verónica, Juana y Gerardo.
 - Cada personaje debe poder responder cuanto mide(cm):
 
 |Personaje| Mide |
-|-----|--------|
+:-----:|:-----:|
 |Martin| 170
 |Verónica| 174
 |Juana| 165
@@ -22,7 +22,7 @@ Vamos a modelar a Martin, Verónica, Juana y Gerardo.
 - Cada personaje debe poder recordar y responder su edad. Debería de tener un método `edad()`.
 
 |Personaje| Edad |
-|-----|--------|
+:-----:|:-----:|
 |Martin| 14
 |Verónica| 17
 |Juana| 20
@@ -48,10 +48,10 @@ Vamos a modelar 3 frutas: Manzana, Mandarina y Banana.
 - Cada fruta debe saber responder al metodo `color()`
 
 |Fruta| Color |
-|-----|--------|
+:-----:|:-----:|
 |Manzana| rojo
-|Mandarina| naranja.
-|Banana| amarillo.
+|Mandarina| naranja
+|Banana| amarillo
 
 **Importante:** No definas las colores de las frutas como string, ya te damos los colores nosotros como objetos.
 
@@ -62,7 +62,7 @@ Vamos a modelar 3 frutas: Manzana, Mandarina y Banana.
 - Cada fruta debe saber responder cuanta energia le va a dar a la persona que la consuma, tene en cuenta que si la fruta es grande le va a devolver un valor y sino otro.
 
 |Fruta| Es chica | Es grande |
-|-----|--------|--------|
+:-----:|:-----:|:-----:|
 |Manzana| 1 | 3
 |Mandarina| 2|5
 |Banana| 3|3
@@ -72,8 +72,8 @@ Vamos a modelar 4 Juegos: Voley, Futbol, Handball y Natacion.
 - cada juego debe saber responder `energiaConsumida()`.
 
 |Juego| Energia que consume |
-|-----|-------|
-|Voley| 2.
-|Futbol| 7.
-|Handball| 6.
-|Natacion| 3.
+:-----:|:-----:|
+|Voley| 2
+|Futbol| 7
+|Handball| 6
+|Natacion| 3
