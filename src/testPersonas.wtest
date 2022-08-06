@@ -1,0 +1,169 @@
+import Personajes.*
+import Juegos.*
+import Frutas.*
+describe "Personaje Martin"{
+	test "Es menor"{
+		assert.notThat(martin.esAdulto())
+	}
+	test "Es mayor"{
+		martin.nuevoAno()
+		martin.nuevoAno()
+		martin.nuevoAno()
+		martin.nuevoAno()
+		assert.that(martin.esAdulto())
+	}
+	test "Mide 170cm"{
+		assert.equals(170, martin.mide())
+	}
+	test "Cambiar energia"{
+		martin.energia(6)
+		assert.equals(6, martin.energia())
+	}
+	test "Energia inicial"{
+		assert.equals(5, martin.energia())
+	}
+	test "Edad inicial"{
+		assert.equals(14, martin.edad())
+	}
+	test "Tiene energia baja"{
+		assert.that(martin.tieneBajaEnergia())
+	}
+	test "No esta feliz"{
+		assert.notThat(martin.estaFeliz())
+	}
+	test "Esta feliz"{
+		martin.energia(25)
+		martin.jugarCon(voley)
+		martin.jugarCon(futbol)
+		assert.that(martin.estaFeliz())
+	}
+	test "Energia despues de comer una banana"{
+		martin.comer(banana)
+		assert.equals(8, martin.energia())
+	}
+	test "Energia de la ultima fruta que comio"{
+		martin.comer(banana)
+		assert.equals(3, martin.energiaDeLaUltimaFruta())
+	}
+}
+
+describe "Personaje Veronica"{
+	test "Es menor"{
+		assert.notThat(veronica.esAdulto())
+	}
+	test "Es mayor"{
+		veronica.nuevoAno()
+		assert.that(veronica.esAdulto())
+	}
+	test "Mide 174cm"{
+		assert.equals(174, veronica.mide())
+	}
+	test "Cambiar energia"{
+		veronica.energia(16)
+		assert.equals(16, veronica.energia())
+	}
+	test "Energia inicial"{
+		assert.equals(4, veronica.energia())
+	}
+	test "Edad inicial"{
+		assert.equals(17, veronica.edad())
+	}
+	test "Tiene energia baja"{
+		assert.that(veronica.tieneBajaEnergia())
+	}
+	test "No esta feliz"{
+		assert.notThat(veronica.estaFeliz())
+	}
+	test "Esta feliz"{
+		veronica.energia(20)
+		veronica.jugarCon(handball)
+		veronica.jugarCon(futbol)
+		assert.that(veronica.estaFeliz())
+	}
+	test "Energia despues de comer una manzana"{
+		veronica.comer(manzana)
+		assert.equals(7, veronica.energia())
+	}
+	test "Energia de la ultima fruta que comio"{
+		martin.comer(manzana)
+		assert.equals(3, martin.energiaDeLaUltimaFruta())
+	}
+}
+
+describe "Personaje Juana"{
+	test "Es mayor"{
+		assert.that(juana.esAdulto())
+	}
+	test "Mide 165cm"{
+		assert.equals(165, juana.mide())
+	}
+	test "Cambiar energia"{
+		juana.energia(45)
+		assert.equals(45, juana.energia())
+	}
+	test "Energia inicial"{
+		assert.equals(1, juana.energia())
+	}
+	test "Edad inicial"{
+		assert.equals(20, juana.edad())
+	}
+	test "Tiene energia baja"{
+		assert.that(juana.tieneBajaEnergia())
+	}
+	test "No esta feliz"{
+		assert.notThat(juana.estaFeliz())
+	}
+	test "Esta feliz"{
+		juana.energia(22)
+		juana.jugarCon(handball)
+		juana.jugarCon(futbol)
+		assert.that(juana.estaFeliz())
+	}
+	test "Energia despues de comer una mandarina"{
+		juana.comer(mandarina)
+		assert.equals(3, juana.energia())
+	}
+	test "Energia de la ultima fruta que comio"{
+		juana.comer(mandarina)
+		assert.equals(2, juana.energiaDeLaUltimaFruta())
+	}
+}
+
+describe "Personaje Gerardo"{
+	test "Es mayor"{
+		assert.that(gerardo.esAdulto())
+	}
+	test "Mide 180cm"{
+		assert.equals(180, gerardo.mide())
+	}
+	test "Cambiar energia"{
+		gerardo.energia(35)
+		assert.equals(35, gerardo.energia())
+	}
+	test "Energia inicial"{
+		assert.equals(1, juana.energia())
+	}
+	test "Edad inicial"{
+		assert.equals(25, gerardo.edad())
+	}
+	test "No tiene energia baja"{
+		assert.notThat(gerardo.tieneBajaEnergia())
+	}
+	test "No esta feliz"{
+		assert.notThat(gerardo.estaFeliz())
+	}
+	test "Esta feliz"{
+		gerardo.energia(12)
+		gerardo.jugarCon(handball)
+		gerardo.jugarCon(natacion)
+		assert.that(gerardo.estaFeliz())
+	}
+	test "Energia despues de comer una manzana"{
+		gerardo.comer(manzana)
+		assert.equals(10, gerardo.energia())
+	}
+	test "Energia de la ultima fruta que comio"{
+		juana.comer(manzana)
+		assert.equals(3, juana.energiaDeLaUltimaFruta())
+	}
+}
