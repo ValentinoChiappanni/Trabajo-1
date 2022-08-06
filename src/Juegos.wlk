@@ -1,21 +1,21 @@
-object computadora {
+object voley {
 	method energiaConsumida(){
 		return 2
 	}
 }
-object limpiarLaCasa {
+object futbol {
 	method energiaConsumida(){
 		return 7
 	}
 }
 
-object jugarALaPelota {
+object handball {
 	method energiaConsumida(){
 		return 6
 	}
 }
-object mirarLaTele {
+object natacion {
 	method energiaConsumida(){
-		return 6
+		return 3
 	}
 }

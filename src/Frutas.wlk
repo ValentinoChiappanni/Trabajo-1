@@ -1,6 +1,5 @@
 import Colores.*
 object manzana {
-	const color = rojo
 	var peso = 150
 	method esGrande(){
 		return peso > 70
@@ -19,12 +18,11 @@ object manzana {
 		}
 	}
 	method color(){
-		return color
+		return rojo
 	}
 }
 
 object mandarina {
-	const color = naranja
 	var peso = 65
 	method esGrande(){
 		return peso > 70
@@ -43,12 +41,11 @@ object mandarina {
 		}
 	}
 	method color(){
-		return color
+		return naranja
 	}
 }
 
 object banana {
-	const color = amarillo
 	var peso = 125
 	method esGrande(){
 		return peso > 70
@@ -63,7 +60,7 @@ object banana {
 		return 3
 	}
 	method color(){
-		return color
+		return amarillo
 	}
 }
 
