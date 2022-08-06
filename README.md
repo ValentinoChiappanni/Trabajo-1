@@ -36,7 +36,7 @@ Vamos a modelar a Martin, Verónica, Juana y Gerardo.
 
 - Cada personaje debe de poder responder al mensaje `estaFeliz()`. Esta feliz cuando la cantidad de veces que jugo es 2 o más y no tiene baja energia.
 
-- Cada personaje debe saber que un nuevos es sumarle un año más al personaje. El método seria `nuevoAno()`. Por ejemplo si el personaje tiene 14 años, al llamar al metodo el personaje tendria 15 años.
+- Cada personaje debe saber que un nuevo año es sumarle un año más al personaje. El método seria `nuevoAno()`. Por ejemplo si el personaje tiene 14 años, al llamar al metodo el personaje tendria 15 años.
 
 - Cada personaje debe de poder `comer(fruta)`. Esto implica que la energía del personaje se incremente, según la energía provista por una fruta, también debe recordar dos cosas, en primer lugar la última fruta que comió y en segundo lugar la cantidad de frutas que comió.
 
