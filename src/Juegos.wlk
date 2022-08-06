@@ -1,21 +1,13 @@
 object voley {
-	method energiaConsumida(){
-		return 2
-	}
+	//Agregar el metodos
 }
 object futbol {
-	method energiaConsumida(){
-		return 7
-	}
+	//Agregar el metodos
 }
 
 object handball {
-	method energiaConsumida(){
-		return 6
-	}
+	//Agregar el metodos
 }
 object natacion {
-	method energiaConsumida(){
-		return 3
-	}
+	//Agregar el metodos
 }
